@@ -33,7 +33,7 @@
 
 #define FIRMWARE_VERSION 0.2
 #define UPDATE_JSON_URL                                                        \
-  "https://raw.githubusercontent.com/aspcodenet/project-name2/main/bin/"       \
+  "https://raw.githubusercontent.com/Cosmao/FOTATest/master/bin/"              \
   "firmware.json"
 
 // receive buffer
