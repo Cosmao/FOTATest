@@ -1,29 +1,29 @@
-#include "esp_event.h"
-#include "esp_netif.h"
+// #include "esp_event.h"
+// #include "esp_netif.h"
 #include "esp_system.h"
-#include "esp_wifi.h"
+// #include "esp_wifi.h"
 #include "nvs_flash.h"
 #include <stddef.h>
-#include <stdint.h>
+// #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/queue.h"
-#include "freertos/semphr.h"
-#include "freertos/task.h"
+// #include "freertos/FreeRTOS.h"
+// #include "freertos/queue.h"
+// #include "freertos/semphr.h"
+// #include "freertos/task.h"
 
-#include "lwip/dns.h"
-#include "lwip/netdb.h"
-#include "lwip/sockets.h"
+// #include "lwip/dns.h"
+// #include "lwip/netdb.h"
+// #include "lwip/sockets.h"
 
 #include "cJSON.h"
 #include "connect_wifi.h"
 #include "esp_http_client.h"
 #include "esp_https_ota.h"
 #include "esp_log.h"
-#include "esp_ota_ops.h"
-#include "esp_partition.h"
+// #include "esp_ota_ops.h"
+// #include "esp_partition.h"
 #include "nvs.h"
 #include "nvs_flash.h"
 // https://wokwi.com/projects/305566932847821378
@@ -31,7 +31,7 @@
 // skapa en funktion som körs på annan TASK
 // 2. Fixa en WIFI-koppling
 
-#define FIRMWARE_VERSION 0.2
+#define FIRMWARE_VERSION 0.3
 #define UPDATE_JSON_URL                                                        \
   "https://raw.githubusercontent.com/Cosmao/FOTATest/master/bin/"              \
   "firmware.json"
