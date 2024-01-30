@@ -122,13 +122,21 @@ void check_update_task(void *pvParameter) {
               printf("downloading and installing new firmware (%s)...\n",
                      file->valuestring);
 
+              printf("esp_http_client\n");
+
               esp_http_client_config_t ota_client_config = {
                   .url = file->valuestring,
                   .keep_alive_enable = true,
               };
+
+              printf("ota_config\n");
+
               esp_https_ota_config_t ota_config = {
                   .http_config = &ota_client_config,
               };
+
+              printf("errCheck\n");
+
               esp_err_t ret = esp_https_ota(&ota_config);
               if (ret == ESP_OK) {
                 printf("OTA OK, restarting...\n");
