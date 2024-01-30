@@ -31,7 +31,7 @@
 // skapa en funktion som körs på annan TASK
 // 2. Fixa en WIFI-koppling
 
-#define FIRMWARE_VERSION 0.3
+#define FIRMWARE_VERSION 0.2
 #define UPDATE_JSON_URL                                                        \
   "https://raw.githubusercontent.com/Cosmao/FOTATest/master/bin/"              \
   "firmware.json"
